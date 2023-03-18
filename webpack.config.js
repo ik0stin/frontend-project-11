@@ -13,6 +13,8 @@ const config = {
   entry: './src/init.js',
   output: {
     path: path.resolve(dirname, 'dist'),
+    filename: '[name].bundle.js',
+    clean: true, // очистка папки dist перед сборкой
   },
   devServer: {
     open: true,
