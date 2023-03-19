@@ -12,7 +12,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const config = {
   entry: './src/init.js',
   output: {
-    path: path.resolve(dirname, 'dist'),
+    path: path.resolve(dirname, 'public'),
     filename: '[name].bundle.js',
     clean: true, // очистка папки dist перед сборкой
   },
